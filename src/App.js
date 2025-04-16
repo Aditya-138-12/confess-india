@@ -1,8 +1,13 @@
 import './App.css';
+import MainHeader from './header/mainHeader';
 
 function App() {
   return (
-    <span>This is confess india, the largest Indian Social platform.</span>
+    <>
+      <div className='main'>
+        <MainHeader/>
+      </div>
+    </>
   );
 }
 
