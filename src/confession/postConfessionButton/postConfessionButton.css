@@ -1,0 +1,15 @@
+.postConfessionButton{
+    color: white;
+    height: 100%;
+    width: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postConfessionButton:hover{
+    background-color: rgba(68, 68, 68, 0.425);
+    cursor: pointer;
+}
