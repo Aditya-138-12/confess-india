@@ -6,7 +6,9 @@ const MainHeader = () =>{
         <>
             <div className='mainHeader'>
                 <div className='logo'>Confess India</div>
-                <div className='search'></div>
+                <div className='search'>
+                    <input type='text' placeholder='Search Confession' className='mainSearch'></input>
+                </div>
                 <div className='Login'>
                     <div className='loginBtn'>Login</div>
                 </div>

@@ -1,11 +1,13 @@
 .mainHeader{
     position: relative;
-    width: 100%;
+    width: 98%;
     height: 6%;
     background-color: #1a1a1b;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 2%;
 }
 
 .logo{
@@ -23,7 +25,10 @@
     position: relative;
     height: 100%;
     width: 40%;
-    background-color: green;
+    background-color: ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Login{
@@ -52,4 +57,55 @@
     transition: 0.2s ease;
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
+}
+
+.mainSearch{
+    position: relative;
+    width: 90%;
+    height: 60%;
+    background-color: #272729;
+    outline: white;
+    border-radius:20px;
+    border: 0.1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 50px;
+    font-size: 15px;
+    color: white;
+}
+
+.mainSearch:hover{
+    border: 0.1px solid rgba(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    .mainHeader {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .Login {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .loginBtn {
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    .search {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 90%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
