@@ -2,6 +2,7 @@ import React from "react";
 import PostConfession from "../postConfession/postConfession";
 import './main.css';
 import PostConfessionButton from "../postConfessionButton/postConfessionButton";
+import MainConfessionComponent from "../confessionComponents/main/main";
 
 const MainConfession = () => {
     return(
@@ -11,6 +12,7 @@ const MainConfession = () => {
                 <PostConfession/>
                 <PostConfessionButton/>
                 </div>
+                <MainConfessionComponent/>
             </div>
         </>
     );

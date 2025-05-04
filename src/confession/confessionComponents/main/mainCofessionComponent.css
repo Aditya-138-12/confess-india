@@ -1,0 +1,49 @@
+.MainConfessionComponent{
+    min-height: 100px;
+    height: auto;
+    width: 30%;
+    border: 0.1px solid rgba(100, 100, 100, 0.2);
+    background-color: #1A1A1B;
+    padding: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s ease;
+    border-radius: 5px;
+}
+
+.MainConfessionComponent:hover{
+    border: 0.1px solid white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.confessionComponentTopInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.confessionTimeComponent{
+    color: rgb(104, 104, 104);
+    font-size: 0.7rem;
+    padding: 0px;
+    width: auto;
+}
+
+.confessionLikeComponent{
+    color: rgb(104, 104, 104);
+    font-size: 0.7rem;
+    padding: 0px;
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .MainConfessionComponent{
+        width: 90%;
+        padding: 10px;
+    }
+    
+  }

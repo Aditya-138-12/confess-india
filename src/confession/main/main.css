@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 300px;
+    gap: 20px;
 }
 
 .confessionInner{
     height: auto;
     position: relative;
     width: 30%;
-    background-color: transparent;
+    background-color: #1A1A1B;
     border: 0.1px solid rgba(82, 82, 82, 0.2);
     border-radius: 5px;
     padding: 20px;
@@ -23,6 +25,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .MainConfession{
+        padding-right: 10px;
+    }
+
     .confessionInner{
         width: 90%;
         padding: 10px;
