@@ -68,7 +68,7 @@ useEffect(() => {
         <BrowserRouter>
           <Routes>
             <Route path='/confession' element=
-              {isInWorldApp && <div className='main'>
+              {!isInWorldApp && <div className='main'>
                 <MainHeader/>
                 <MainConfession/>
               </div>}
