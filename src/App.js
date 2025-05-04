@@ -3,21 +3,25 @@ import MainConfession from './confession/main/main';
 import MainHeader from './header/mainHeader';
 import { MiniKitProvider } from '@worldcoin/minikit-js/minikit-provider';
 import { MiniKit, VerificationLevel } from '@worldcoin/minikit-js';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function App() {
+
+const [isInWorldApp, setisInWorldApp] = useState(0);
 
 useEffect(() => {
   const handleVerify = async () => {
     if (!MiniKit.isInstalled()) {
       alert("Please open in the World App")
+      setisInWorldApp(1);
       return
     }
   
     const verifyPayload = {
       action: 'verify_proof', // Same ID from Worldcoin Dev Portal
-      verification_level: VerificationLevel.Orb, // Orb or Device
+      signal: '0x12312',  // Optional
+      verification_level: VerificationLevel.Device, // Orb or Device
     }
   
     try {
@@ -37,10 +41,13 @@ useEffect(() => {
         body: JSON.stringify({
           payload: finalPayload,
           action: verifyPayload.action,
+          signal: '0x12312',  // Optional
         }),
       })
   
-      const data = await response.json()
+      const data = await response.json();
+
+      console.log("Verification response data: ", data);
   
       if (response.status === 200) {
         alert("You are verified as a real human!")
@@ -58,12 +65,11 @@ useEffect(() => {
   return (
     <>
    <MiniKitProvider>
-        <div className='main'>
+        {!isInWorldApp && <div className='main'>
           <MainHeader/>
           <MainConfession/>
-        </div>
+        </div>}
     </MiniKitProvider>
-      {console.log("This tells that the mini kit is installed or not? " + MiniKit.isInstalled())}
     </>
   );
 }
