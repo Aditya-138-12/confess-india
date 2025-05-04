@@ -4,7 +4,7 @@ import MainHeader from './header/mainHeader';
 import { MiniKitProvider } from '@worldcoin/minikit-js/minikit-provider';
 import { MiniKit, VerificationLevel } from '@worldcoin/minikit-js';
 import { useEffect, useState } from 'react';
-
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 
 function App() {
 
@@ -65,10 +65,17 @@ useEffect(() => {
   return (
     <>
    <MiniKitProvider>
-        {!isInWorldApp && <div className='main'>
-          <MainHeader/>
-          <MainConfession/>
-        </div>}
+        <BrowserRouter>
+          <Routes>
+            <Route path='/confession' element=
+              {isInWorldApp && <div className='main'>
+                <MainHeader/>
+                <MainConfession/>
+              </div>}
+            />
+          <Route path='/' element={<div style={{color:"white"}}>This is the Landing page. <span style={{color:"red"}}>Under Construction!</span></div>}/>
+          </Routes>
+        </BrowserRouter>
     </MiniKitProvider>
     </>
   );
