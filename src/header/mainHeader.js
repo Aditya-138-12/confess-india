@@ -5,7 +5,7 @@ const MainHeader = () =>{
     return (
         <>
             <div className='mainHeader'>
-                <div className='logo'>Confess India</div>
+                <div className='logo'>ConfessNet</div>
                 <div className='search'>
                     <input type='text' placeholder='Search Confession' className='mainSearch'></input>
                 </div>

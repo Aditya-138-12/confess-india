@@ -5,7 +5,7 @@ import ConfessionLikeComponent from "../confessionLikes/confessionLike";
 import ConfessionContentComponent from "../confessContent/confessionContent";
 import ConfessionLikeButton from "../confessionLikeButton/confessionLikeButton";
 import ConfessionCommentButton from "../confessionComment/confessionComment";
-import ConfessionReportButton from "../../ConfessionReport/confessionReport";
+import ConfessionReportButton from "../ConfessionReport/confessionReport";
 
 const MainConfessionComponent = () => {
     return (
