@@ -2,7 +2,7 @@
     position: relative;
     width: 98%;
     height: 6%;
-    background-color: #1a1a1b;
+    background-color: #1a1a1b56;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,6 +19,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 5px;
+    font-size: 1.2rem;
 }
 
 .search{

@@ -68,12 +68,19 @@ useEffect(() => {
         <BrowserRouter>
           <Routes>
             <Route path='/confession' element=
-              {!isInWorldApp && <div className='main'>
+              {isInWorldApp && <div className='main'>
                 <MainHeader/>
                 <MainConfession/>
               </div>}
             />
-          <Route path='/' element={<div style={{color:"white"}}>This is the Landing page. <span style={{color:"red"}}>Under Construction!</span></div>}/>
+          <Route path='/' element={
+  <iframe
+    src="/landing/index.html"
+    title="Landing Page"
+    style={{ width: '100%', height: '100vh', border: 'none' }}
+  />
+}/>
+
           </Routes>
         </BrowserRouter>
     </MiniKitProvider>

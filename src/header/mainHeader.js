@@ -5,7 +5,7 @@ const MainHeader = () =>{
     return (
         <>
             <div className='mainHeader'>
-                <div className='logo'>ConfessNet</div>
+                <div className='logo'><span style={{color:"#6E59A5"}}>Confess</span><span>Net</span></div>
                 <div className='search'>
                     <input type='text' placeholder='Search Confession' className='mainSearch'></input>
                 </div>
