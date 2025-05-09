@@ -1,4 +1,4 @@
-# confess-india trying to transition it into ConfessNet
+# `confess-india` trying to transition it into `ConfessNet`
 This is the web interface, for confessing your sins.
 =======
 # Getting Started with Create React App
