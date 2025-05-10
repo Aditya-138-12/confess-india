@@ -5,6 +5,7 @@ import { MiniKitProvider } from '@worldcoin/minikit-js/minikit-provider';
 import { MiniKit, VerificationLevel } from '@worldcoin/minikit-js';
 import { useEffect, useState } from 'react';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import PostConfessionPage from './confession/postConfessionPage/main/main';
 
 function App() {
 
@@ -80,7 +81,7 @@ useEffect(() => {
     style={{ width: '100%', height: '100vh', border: 'none' }}
   />
 }/>
-
+          <Route path='/post' element={<PostConfessionPage/>}/>
           </Routes>
         </BrowserRouter>
     </MiniKitProvider>
